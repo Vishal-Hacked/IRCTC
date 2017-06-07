@@ -122,8 +122,13 @@ void confirm::on_pushButton_2_clicked()
       qDebug()<<"items:: "<<name<<" "<<age<<" "<<gender;
 
       itm5 = ui->tableWidget->item( i, 3 );
-      adhar=itm5->text();
-       out<<adhar<<"\n";
+      if(itm5){
+        adhar=itm5->text();
+        out<<adhar<<"\n";
+      }
+
+      //hello
+
        itm = ui->tableWidget->item( i+1, 0 );
        itm3 = ui->tableWidget->item( i+1, 1 );
        itm4 = ui->tableWidget->item( i+1, 2 );
