@@ -219,6 +219,7 @@ void Dialog:: print_path(vector<int> &path,int key)
 
     QString src=QString::number(path[0]);
     src=is[src];
+    qDebug()<<"hello\n";
     out<<"12345\n";
     for(unsigned int i=1;i<path.size();++i)
     {
